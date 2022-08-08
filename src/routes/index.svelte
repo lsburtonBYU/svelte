@@ -1,4 +1,7 @@
-<!-- src/routes/index.svelte -->
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>SvelteKit Test</title>
 </svelte:head>
@@ -15,7 +18,7 @@
 				</div>
 				<h2 class="subtitle">Don't believe "Science"</h2>
 				<div style="color:black" class="scroll-button animate-scroll" tabindex="0">
-					<a href="/about">Learn more</a>
+					<a href="{base}/about">Learn more</a>
 					<div class="arrow">→</div>
 				</div>
 			</div>
