@@ -1,14 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
 
-// const dev = process.env.NODE_ENV === 'development';
-const base = '/svelte';
+const base = process.env['NODE_ENV'] === 'production' ? '/svelte' : '';
+// const base = import.meta.env.DEV ? '' : '/svelte';
+// const base = '/svelte';
 // const base = '';
 
 export default {
 	kit: {
-		paths: {
-			base: base
-		},
 		adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below
@@ -17,6 +15,10 @@ export default {
 			fallback: null,
 			precompress: false
 		}),
+
+		paths: {
+			base: base
+		},
 
 		prerender: {
 			// This can be false if you're using a fallback (i.e. SPA mode)
