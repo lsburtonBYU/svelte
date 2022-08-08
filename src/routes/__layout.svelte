@@ -1,12 +1,15 @@
-<!-- src/routes/__layout.svelte -->
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <nav>
 	<div class="nav-container">
-		<a href="./" class="nav-logo" title="Back to Homepage">Pigeons Aren't Real</a>
+		<a href="{base}/" class="nav-logo" title="Back to Homepage">Pigeons Aren't Real</a>
 		<div class="nav-links">
-			<a href="./about" class="link">About</a>
-			<a href="./blog" class="link">Blog</a>
-			<a href="./projects" class="link">Projects</a>
-			<a href="./contact" class="link">Contact</a>
+			<a href="{base}/about" class="link">About</a>
+			<a href="{base}/blog" class="link">Blog</a>
+			<a href="{base}/projects" class="link">Projects</a>
+			<a href="{base}/contact" class="link">Contact</a>
 		</div>
 	</div>
 </nav>
