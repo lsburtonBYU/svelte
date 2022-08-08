@@ -1,19 +1,9 @@
-<script context="module">
-	export const load = async ({ fetch }) => {
-		const res = await fetch('https://dog.ceo/api/breeds/image/random/6');
-		const blogposts = await res.json();
-
-		console.log(blogposts);
-		return {
-			props: {
-				blogposts
-			}
-		};
-	};
-</script>
-
 <script>
-	export let blogposts;
+	import Loader from '$lib/components/Loader.svelte';
+	const fetchImage = (async () => {
+		const response = await fetch('https://dog.ceo/api/breeds/image/random/9');
+		return await response.json();
+	})();
 </script>
 
 <!-- src/routes/blog.svelte -->
@@ -24,16 +14,19 @@
 <div class="container">
 	<h1>Random dog images</h1>
 	<div class="blogposts">
-		{#each blogposts.message as post}
-			<div class="post">
-				<img src={post} alt="random dog" />
+		{#await fetchImage}
+			<Loader />
+		{:then data}
+			{#each data.message as post}
+				<div class="post">
+					<img src={post} alt="random dog" />
 
-				<p class="readmore">
-					read more
-					<!-- <a style=" color: rgb(10, 10, 139);" href={`/blog/${post.id}`}> Read More </a> -->
-				</p>
-			</div>
-		{/each}
+					<p class="readmore">read more</p>
+				</div>
+			{/each}
+		{:catch error}
+			<p>An error occurred!</p>
+		{/await}
 	</div>
 </div>
 

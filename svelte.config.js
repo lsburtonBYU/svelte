@@ -1,11 +1,13 @@
 import adapter from '@sveltejs/adapter-static';
 
-const dev = process.env.NODE_ENV === 'development';
+// const dev = process.env.NODE_ENV === 'development';
+const base = '/svelte';
+// const base = '';
 
 export default {
 	kit: {
 		paths: {
-			base: '/svelte'
+			base: base
 		},
 		adapter: adapter({
 			// default options are shown. On some platforms
