@@ -23,11 +23,12 @@
 	main {
 		display: grid;
 		grid-template-rows: 38vh 52vh;
+		grid-template-columns: 80px 1fr 80px;
+		gap: 0.7rem;
 	}
 
 	main > * {
-		grid-column: 1 / span 1;
-		padding: 0 80px;
+		grid-column: 2 / span 1;
 	}
 
 	main p {
@@ -35,9 +36,14 @@
 		margin: 0;
 	}
 
-	.subtitle,
+	/* .subtitle,
 	.scroll-button {
 		padding-top: 1rem;
+	} */
+
+	.scroll-button a {
+		text-decoration: none;
+		color: black;
 	}
 
 	h1 {
@@ -72,9 +78,9 @@
 
 	.background {
 		grid-row: 2 / span 1;
+		grid-column: 1 / span 3;
 		background-color: #adadd4;
 		z-index: -1;
-		min-height: 50vh;
 	}
 
 	.scroll-button {

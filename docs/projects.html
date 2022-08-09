@@ -6,23 +6,22 @@
 	<link rel="icon" href="/svelte/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="content-security-policy" content=""><title>Projects</title>
-	<link href="/svelte/_app/immutable/assets/__layout-78b0f609.css" rel="stylesheet">
-	<link rel="modulepreload" href="/svelte/_app/immutable/start-68c8f77d.js">
+	<link rel="modulepreload" href="/svelte/_app/immutable/start-8d24f1e3.js">
 	<link rel="modulepreload" href="/svelte/_app/immutable/chunks/index-fb50aad4.js">
 	<link rel="modulepreload" href="/svelte/_app/immutable/chunks/paths-b9644fda.js">
-	<link rel="modulepreload" href="/svelte/_app/immutable/pages/__layout.svelte-f73bf5e4.js">
-	<link rel="modulepreload" href="/svelte/_app/immutable/pages/projects.svelte-ab1fcf10.js">
+	<link rel="modulepreload" href="/svelte/_app/immutable/pages/__layout.svelte-827da5e5.js">
+	<link rel="modulepreload" href="/svelte/_app/immutable/pages/projects.svelte-3fb405f9.js">
 </head>
 
 <body>
 	<div>
 
 
-<header class="svelte-hleg0c"><nav class="svelte-hleg0c"><ul class="svelte-hleg0c"><li class="svelte-hleg0c"><a href="/svelte/" title="Back to Homepage" class="svelte-hleg0c">Pigeons Aren&#39;t Real</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/about" class="svelte-hleg0c">About</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/blog" class="svelte-hleg0c">Blog</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/projects" class="svelte-hleg0c">Projects</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/contact" class="svelte-hleg0c">Contact</a></li></ul></nav></header>
+<header><nav><ul><li><a href="/svelte/" title="Back to Homepage">Pigeons Aren&#39;t Real</a></li>
+			<li><a href="/svelte/about">About</a></li>
+			<li><a href="/svelte/blog">Blog</a></li>
+			<li><a href="/svelte/projects">Projects</a></li>
+			<li><a href="/svelte/contact">Contact</a></li></ul></nav></header>
 
 
 
@@ -32,13 +31,13 @@
 <a href="/svelte/">Home</a>
 
 
-		<script type="module" data-sveltekit-hydrate="zqs8kv">
-		import { set_public_env, start } from "/svelte/_app/immutable/start-68c8f77d.js";
+		<script type="module" data-sveltekit-hydrate="t1o595">
+		import { set_public_env, start } from "/svelte/_app/immutable/start-8d24f1e3.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="zqs8kv"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="t1o595"]').parentNode,
 			paths: {"base":"/svelte","assets":"/svelte"},
 			session: {},
 			route: true,
@@ -70,5 +69,34 @@
 
 	:root {
 		--background: #adadd4;
+	}
+
+	header {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 10vh;
+	}
+
+	header nav ul {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0 60px;
+	}
+
+	header nav li:first-child {
+		flex-grow: 1;
+	}
+
+
+	nav a {
+		display: block;
+		padding: 1rem;
+		text-decoration: none;
+		font-size: 0.85rem;
+		letter-spacing: 1px;
+		color: black;
 	}
 </style>

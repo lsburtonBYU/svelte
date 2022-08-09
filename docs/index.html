@@ -6,44 +6,43 @@
 	<link rel="icon" href="/svelte/favicon.png" />
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="content-security-policy" content=""><title>SvelteKit Test</title>
-	<link href="/svelte/_app/immutable/assets/__layout-78b0f609.css" rel="stylesheet">
-	<link href="/svelte/_app/immutable/assets/index-e26d7460.css" rel="stylesheet">
-	<link rel="modulepreload" href="/svelte/_app/immutable/start-68c8f77d.js">
+	<link href="/svelte/_app/immutable/assets/index-6b7aa9a3.css" rel="stylesheet">
+	<link rel="modulepreload" href="/svelte/_app/immutable/start-8d24f1e3.js">
 	<link rel="modulepreload" href="/svelte/_app/immutable/chunks/index-fb50aad4.js">
 	<link rel="modulepreload" href="/svelte/_app/immutable/chunks/paths-b9644fda.js">
-	<link rel="modulepreload" href="/svelte/_app/immutable/pages/__layout.svelte-f73bf5e4.js">
-	<link rel="modulepreload" href="/svelte/_app/immutable/pages/index.svelte-aabf2924.js">
+	<link rel="modulepreload" href="/svelte/_app/immutable/pages/__layout.svelte-827da5e5.js">
+	<link rel="modulepreload" href="/svelte/_app/immutable/pages/index.svelte-3a492882.js">
 </head>
 
 <body>
 	<div>
 
 
-<header class="svelte-hleg0c"><nav class="svelte-hleg0c"><ul class="svelte-hleg0c"><li class="svelte-hleg0c"><a href="/svelte/" title="Back to Homepage" class="svelte-hleg0c">Pigeons Aren&#39;t Real</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/about" class="svelte-hleg0c">About</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/blog" class="svelte-hleg0c">Blog</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/projects" class="svelte-hleg0c">Projects</a></li>
-			<li class="svelte-hleg0c"><a href="/svelte/contact" class="svelte-hleg0c">Contact</a></li></ul></nav></header>
+<header><nav><ul><li><a href="/svelte/" title="Back to Homepage">Pigeons Aren&#39;t Real</a></li>
+			<li><a href="/svelte/about">About</a></li>
+			<li><a href="/svelte/blog">Blog</a></li>
+			<li><a href="/svelte/projects">Projects</a></li>
+			<li><a href="/svelte/contact">Contact</a></li></ul></nav></header>
 
 
 
 
-<main class="svelte-3yvihr"><h1 class="svelte-3yvihr">Pigeons Aren&#39;t Real</h1>
-	<p class="title title-1 svelte-3yvihr">Pigeons</p>
-	<div class="bottom svelte-3yvihr"><p class="title title-2 svelte-3yvihr">Aren&#39;t Real</p>
-		<p class="subtitle svelte-3yvihr">Don&#39;t believe &quot;Science&quot;</p>
-		<p class="scroll-button svelte-3yvihr"><a href="/svelte/about">Learn more <span class="arrow svelte-1w6d40x svelte-3yvihr">→</span></a></p></div>
-	<div class="background svelte-3yvihr"></div>
+<main class="svelte-58rphb"><h1 class="svelte-58rphb">Pigeons Aren&#39;t Real</h1>
+	<p class="title title-1 svelte-58rphb">Pigeons</p>
+	<div class="bottom svelte-58rphb"><p class="title title-2 svelte-58rphb">Aren&#39;t Real</p>
+		<p class="subtitle svelte-58rphb">Don&#39;t believe &quot;Science&quot;</p>
+		<p class="scroll-button svelte-58rphb"><a href="/svelte/about" class="svelte-58rphb">Learn more <span class="arrow svelte-1w6d40x svelte-58rphb">→</span></a></p></div>
+	<div class="background svelte-58rphb"></div>
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="cihljd">
-		import { set_public_env, start } from "/svelte/_app/immutable/start-68c8f77d.js";
+		<script type="module" data-sveltekit-hydrate="k7qf4j">
+		import { set_public_env, start } from "/svelte/_app/immutable/start-8d24f1e3.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="cihljd"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="k7qf4j"]').parentNode,
 			paths: {"base":"/svelte","assets":"/svelte"},
 			session: {},
 			route: true,
@@ -75,5 +74,34 @@
 
 	:root {
 		--background: #adadd4;
+	}
+
+	header {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 10vh;
+	}
+
+	header nav ul {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0 60px;
+	}
+
+	header nav li:first-child {
+		flex-grow: 1;
+	}
+
+
+	nav a {
+		display: block;
+		padding: 1rem;
+		text-decoration: none;
+		font-size: 0.85rem;
+		letter-spacing: 1px;
+		color: black;
 	}
 </style>
