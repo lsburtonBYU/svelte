@@ -17,7 +17,7 @@
 		</p>
 	</div>
 	<div class="main-image">
-		<svg background="#fff" stoke-width="6" viewBox="0 0 200 200">
+		<svg viewBox="0 0 200 200">
 			<path
 				fill="none"
 				stroke="#000"
@@ -84,12 +84,6 @@
 </main>
 
 <style>
-	:global(body) {
-		margin: 0;
-		font-family: 'Inter', sans-serif;
-		display: flex;
-		flex-direction: column;
-	}
 	main {
 		display: grid;
 		grid-template-rows: 18vh repeat(4, 10vh) 32vh;
@@ -175,5 +169,11 @@
 
 	.scroll-button .arrow {
 		margin-left: 0.5rem;
+	}
+
+	@media (max-width: 550px) {
+		.title {
+			font-size: 3rem;
+		}
 	}
 </style>

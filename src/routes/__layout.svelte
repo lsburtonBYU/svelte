@@ -18,6 +18,17 @@
 <slot />
 
 <style>
+	:global(:root) {
+		box-sizing: border-box;
+	}
+
+	:global(body) {
+		margin: 0;
+		font-family: 'Inter', sans-serif;
+		display: flex;
+		flex-direction: column;
+	}
+
 	header {
 		position: sticky;
 		top: 0;
