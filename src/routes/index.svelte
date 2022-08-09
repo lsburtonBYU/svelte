@@ -24,7 +24,6 @@
 		display: grid;
 		grid-template-rows: 38vh 52vh;
 		grid-template-columns: 80px 1fr 80px;
-		gap: 0.7rem;
 	}
 
 	main > * {
@@ -36,10 +35,10 @@
 		margin: 0;
 	}
 
-	/* .subtitle,
+	.subtitle,
 	.scroll-button {
 		padding-top: 1rem;
-	} */
+	}
 
 	.scroll-button a {
 		text-decoration: none;
