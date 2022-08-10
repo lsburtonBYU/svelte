@@ -20,6 +20,8 @@
 <style>
 	:global(:root) {
 		box-sizing: border-box;
+		--gutter: 40px;
+		--background-color: #adadd4;
 	}
 
 	:global(body) {
